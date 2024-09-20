@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #999999;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        a.button:hover {
+            background-color: #777777;
+        }
+    </style>
 </head>
 <body>
-    <h2>Welcome to the Home Page</h2>
-    <p>You are logged in successfully!</p>
+
+    <a href="{% url 'login' %}" class="button">Login</a>
+    <a href="{% url 'signup' %}" class="button">Sign Up</a>
+
 </body>
 </html>
